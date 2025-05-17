@@ -37,7 +37,7 @@ function agregarEstudianteAlaTabla(student){
     tableBody.appendChild(row)
 }
 
-const promDiv = document.getElementById("everage")
+const promDiv = document.getElementById("average")
 
 function calcularPromedio(){
     if(students.length === 0){
