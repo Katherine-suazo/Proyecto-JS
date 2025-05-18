@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px dotted green; */
+}
+
+.contain {
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+.titulo {
+    font-family: initial;
+    text-align: center;
+    padding: 2%;
+    margin-bottom: 2px;
+}
+
+.average-title {
+    font-weight: bold;
+    font-family: initial;
+    color: rgb(0, 128, 221);
+    text-align: center;
+    background-color: rgb(228, 246, 255);
+    border: 2px solid rgb(0, 128, 221);
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.studentForm-cuadrado {
+    border: 2px solid rgb(0, 128, 221);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+label {
+    font-family: initial;
+}
+
+.boton {
+    margin-top: 10px;
+}
+
+th {
+    font-family: initial;
+    padding: 5px;
+    padding-right: 200px;
+}
+
+td {
+    font-family: initial;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 5px;
+    padding-right: 200px;
+}
+
+.table-light {
+    border: 1px solid black;
+}
+
+.tabla {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 30px;
+}
+
+.formato-entrada {
+    margin-left: 10%;
+    width: 80%;
+    margin-right: 10%;
+}

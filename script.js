@@ -1,6 +1,6 @@
 const students = []
 
-document.getElementById("StudentForm").addEventListener("submit", function (e){
+document.getElementById("studentForm").addEventListener("submit", function (e) {
     e.preventDefault();
 
     // var name = var se puede modificar y llamar desde cualquier lugar
@@ -11,23 +11,23 @@ document.getElementById("StudentForm").addEventListener("submit", function (e){
     const lastName = document.getElementById("lastName").value.trim();
     const grade = parseFloat(document.getElementById("grade").value);
 
-    if(grade>7 || grade<1 || !name || !lastName || isNaN(grade)){ // is not a number (isNaN)
+    if (grade > 7 || grade < 1 || !name || !lastName || isNaN(grade)) { // is not a number (isNaN)
         alert("Error al ingresar los datos")
         return
     }
 
-    const student = {name, lastName, grade}
+    const student = { name, lastName, grade }
     students.push(student)
     console.log(students)
     agregarEstudianteAlaTabla(student)
     calcularPromedio(student)
     this.reset()
-    
+
 })
 
 const tableBody = document.querySelector("#studentTable tbody")
 
-function agregarEstudianteAlaTabla(student){
+function agregarEstudianteAlaTabla(student) {
     const row = document.createElement("tr");
     row.innerHTML = `
     <td>${student.name}</td>
@@ -39,13 +39,14 @@ function agregarEstudianteAlaTabla(student){
 
 const promDiv = document.getElementById("average")
 
-function calcularPromedio(){
-    if(students.length === 0){
-        promDiv.innerHTML = "Promedio General del Curso : N/A";
+function calcularPromedio() {
+    if (students.length === 0) {
+        promDiv.innerHTML = "Promedio de Calificaciones: No Disponible";
         return
     }
     // calcular el promedio
     const total = students.reduce((acc, student) => acc + student.grade, 0)
     const average = total / students.length
-    promDiv.innerHTML = `Pomedio General del Curso : ${average.toFixed(2)}`
+    promDiv.innerHTML = `Promedio de Calificaciones: ${average.toFixed(2)}`
 }
+
