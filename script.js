@@ -35,7 +35,7 @@ function agregarEstudianteAlaTabla(student) {
     <td>${student.grade}</td>
     <td> <button class="btn">Eliminar</button></td>
     `;
-    row.querySelector("btn").addEventListener("click", function(){
+    row.querySelector(".btn").addEventListener("click", function(){
         borrarEstudiante(student, row)
     })
     
