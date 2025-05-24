@@ -55,16 +55,6 @@ function borrarEstudiante(student, row){
     }
 }
 
-// BORRAR ESTUDIANTE
-function borrarEstudiante(student, row){
-    const index = students.indexOf(student);
-    if(index > -1){
-        students.splice(index, 1);
-        row.remove();
-        calcularPromedio();
-    }
-}
-
 const promDiv = document.getElementById("average")
 
 function calcularPromedio() {
