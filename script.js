@@ -33,7 +33,7 @@ function agregarEstudianteAlaTabla(student) {
     <td>${student.name}</td>
     <td>${student.lastName}</td>
     <td>${student.grade}</td>
-    <td> <button class="btn">Eliminar</button></td>
+    <td> <button class="btn btn btn-dark">Eliminar</button></td>
     `;
     row.querySelector(".btn").addEventListener("click", function(){
         borrarEstudiante(student, row)

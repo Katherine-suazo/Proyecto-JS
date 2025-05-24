@@ -11,7 +11,6 @@
 }
 
 .titulo {
-    font-family: initial;
     text-align: center;
     padding: 2%;
     margin-bottom: 2px;
@@ -19,37 +18,35 @@
 
 .average-title {
     font-weight: bold;
-    font-family: initial;
-    color: rgb(0, 128, 221);
+    color: rgb(0, 0, 0);
     text-align: center;
-    background-color: rgb(228, 246, 255);
-    border: 2px solid rgb(0, 128, 221);
+    background-color: rgb(205, 191, 237);
+    border: 2px solid rgb(0, 0, 0);
     margin-bottom: 20px;
     padding: 5px;
+    border-radius: 5px;
 }
 
 .studentForm-cuadrado {
-    border: 2px solid rgb(0, 128, 221);
+    border: 2px solid rgb(0, 0, 0);
     padding: 10px;
     border-radius: 5px;
 }
 
-label {
+/* label {
     font-family: initial;
-}
+} */
 
 .boton {
     margin-top: 10px;
 }
 
 th {
-    font-family: initial;
     padding: 5px;
     padding-right: 200px;
 }
 
 td {
-    font-family: initial;
     border: 1px solid rgb(0, 0, 0);
     padding: 5px;
     padding-right: 200px;
